@@ -1,0 +1,8 @@
+<div class="card" (click)="onFlip()" [class.flipped]="card().isFlipped">
+  <div class="card-inner">
+    <div class="card-front">
+      {{ card().value }}
+    </div>
+    <div class="card-back"></div>
+  </div>
+</div>

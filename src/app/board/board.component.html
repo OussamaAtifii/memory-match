@@ -1,0 +1,11 @@
+<div class="controls">
+  <p>
+    ATTEMPTS: <span class="attempts">{{ attempts() }}</span>
+  </p>
+  <button (click)="reset()">RESET</button>
+</div>
+<div class="board">
+  @for (card of cards(); track card.id) {
+    <app-card [card]="card" (flip)="onFlip(card)" />
+  }
+</div>
